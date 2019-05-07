@@ -54,19 +54,9 @@ while True:
 	except Exception:
 		time.sleep(15)
 		
-
-
-
-
 	bot.reply_to(message, 'https')
 
 
 
 
 
-
-while True:
-	try:
-		bot.polling()		
-	except Exception:
-		time.sleep(15)
