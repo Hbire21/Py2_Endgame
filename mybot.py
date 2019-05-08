@@ -13,21 +13,21 @@ bot = telebot.TeleBot(token=bot_token)
 
 
 def send_welcome(message):
-	bot.reply_to(message, "welcome!")
+	bot.reply_to(message, "welcome! use /help to explore")
 
 
 @bot.message_handler(commands=['help'])
 
 
 def send_help(message):
-	bot.reply_to(message, 'To use this bot, send the username')
+	bot.reply_to(message, 'To use this bot, send /months and /days to know the python2 month and days left to come to an end')
 
 
 @bot.message_handler(commands=['months'])
 
 
 def send_months_left(message):
-	days_left = ((datetime.datetime(2020,1,1) - datetime.datetime.now()).days) - 4
+	days_left = ((datetime.datetime(2020,1,1) - datetime.datetime.now()).days) - 3
 	months_left = days_left / 30
 	string_form = repr(months_left)
 	splitted = string_form.split('.')
@@ -38,7 +38,7 @@ def send_months_left(message):
 
 
 def send_days_left(message):
-	days_left = ((datetime.datetime(2020,1,1) - datetime.datetime.now()).days) - 4
+	days_left = ((datetime.datetime(2020,1,1) - datetime.datetime.now()).days) - 3
 	months_left = days_left / 30
 	string_form = repr(months_left)
 	splitted = string_form.split('.')
@@ -54,8 +54,6 @@ while True:
 	except Exception:
 		time.sleep(15)
 		
-	bot.reply_to(message, 'https')
-
 
 
 
