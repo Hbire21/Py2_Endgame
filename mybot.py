@@ -27,7 +27,7 @@ def send_help(message):
 
 
 def send_months_left(message):
-	days_left = ((datetime.datetime(2020,1,1) - datetime.datetime.now()).days) - 3
+	days_left = ((datetime.datetime(2020,1,1) - datetime.datetime.now()).days) - 4
 	months_left = days_left / 30
 	string_form = repr(months_left)
 	splitted = string_form.split('.')
@@ -38,7 +38,7 @@ def send_months_left(message):
 
 
 def send_days_left(message):
-	days_left = ((datetime.datetime(2020,1,1) - datetime.datetime.now()).days) - 3
+	days_left = ((datetime.datetime(2020,1,1) - datetime.datetime.now()).days) - 4
 	months_left = days_left / 30
 	string_form = repr(months_left)
 	splitted = string_form.split('.')
