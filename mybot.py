@@ -3,8 +3,6 @@ import time
 import datetime
 
 
-bot_token = "892091673:AAHKMSkPLX7xKdQr4aoVx-BOKvYJnhp5_DE"
-
 
 bot = telebot.TeleBot(token=bot_token)
 
