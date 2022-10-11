@@ -3,9 +3,7 @@ import time
 import datetime
 
 
-
 bot = telebot.TeleBot(token=bot_token)
-
 
 @bot.message_handler(commands=['start'])
 
